@@ -7,6 +7,7 @@ class Channel {
     send = (obj) => {
         let count;
         let message = null;
+        //TODO: For loop can be condensed to single, private method
         for(count=0; count<this.#data.length; count++){
             let currMsg = this.#data[count]
             if (currMsg.needSend()) {
