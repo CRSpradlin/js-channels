@@ -7,30 +7,30 @@ Channels allow you to have inter-process communication between multiple async fu
 ### Example
 Code within examples folder
 ```
-import Channel from './channel.js'
+const Channel = require('channelsjs').Channel
 
-let ch = new Channel()
+const ch = new Channel()
 
 // Sender function to send via the channel
-let sender = async () => {
-    for(let i=0; i<1000; i++){
-        // await key word can be placed in front of the below command
-        // to sync the two async functions
-        ch.send(i)
-    }
+const sender = async () => {
+  for (let i = 0; i < 1000; i++) {
+    // await key word can be placed in front of the below command
+    // to sync the two async functions
+    ch.send(i)
+  }
 }
 
 // Receiver function to receive the channel messages
-let receiver = async () => {
-    for(let i=0; i<1000; i++){
-        console.log(await ch.receive())
-    }
+const receiver = async () => {
+  for (let i = 0; i < 1000; i++) {
+    console.log(await ch.receive())
+  }
 }
 
 // Main function runs the above two async functions
-let main = () => {
-    receiver()
-    sender()
+const main = () => {
+  receiver()
+  sender()
 }
 main()
 ```

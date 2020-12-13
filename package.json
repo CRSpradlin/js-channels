@@ -1,6 +1,6 @@
 {
   "name": "@crspradlin/channelsjs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Implementation of golang channels, except in javascript",
   "main": "index.js",
   "scripts": {
