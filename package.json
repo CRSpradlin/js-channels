@@ -1,15 +1,29 @@
 {
-  "name": "channels",
-  "version": "0.0.1",
+  "name": "@crspradlin/channelsjs",
+  "version": "1.0.0",
   "description": "Implementation of golang channels, except in javascript",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "channels"
+    "channels",
+    "channelsjs",
+    "channel",
+    "golang",
+    "go"
   ],
   "author": "crspradlin",
   "license": "ISC",
-  "type": "module"
+  "directories": {
+    "example": "examples"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CRSpradlin/js-channels.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CRSpradlin/js-channels/issues"
+  },
+  "homepage": "https://github.com/CRSpradlin/js-channels#readme"
 }

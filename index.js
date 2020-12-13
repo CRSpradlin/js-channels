@@ -94,4 +94,4 @@ class Message {
     }
 }
 
-export default Channel
+exports.Channel = Channel

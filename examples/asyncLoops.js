@@ -1,4 +1,4 @@
-import Channel from '../channel.js'
+import Channel from '../index.js'
 
 let ch = new Channel()
 
@@ -14,7 +14,7 @@ let sender = async () => {
 // Receiver function to receive the channel messages
 let receiver = async () => {
     for(let i=0; i<1000; i++){
-        console.log(await ch.receive());
+        console.log(await ch.receive())
     }
 }
 

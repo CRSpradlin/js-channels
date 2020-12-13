@@ -5,6 +5,7 @@ Really rough implementation of golang's channels but in javascript!
 Channels allow you to have inter-process communication between multiple async funtions. Channels are also a good way to synchronize processes. 
 
 ### Example
+Code within examples folder
 ```
 import Channel from './channel.js'
 
@@ -22,7 +23,7 @@ let sender = async () => {
 // Receiver function to receive the channel messages
 let receiver = async () => {
     for(let i=0; i<1000; i++){
-        console.log(await ch.receive());
+        console.log(await ch.receive())
     }
 }
 
