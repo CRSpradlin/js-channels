@@ -34,3 +34,6 @@ const main = () => {
 }
 main()
 ```
+
+### NPM Package Release
+Package has been [released to npm](https://www.npmjs.com/package/@crspradlin/channelsjs) for download and use within NodeJS Projects.
